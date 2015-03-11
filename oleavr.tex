@@ -1,0 +1,85 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage[scale=0.75]{geometry}
+\usepackage[T1]{fontenc}
+
+\name{Ole André}{Vadla Ravnås}
+\title{Senior Software Engineer}
+\phone[mobile]{+47~482~70~645}
+\email{oleavr@gmail.com}
+\homepage{www.frida.re}
+\social[linkedin]{oleavr}
+\social[twitter]{oleavr}
+\social[github]{oleavr}
+\photo[64pt][0.4pt]{picture}
+
+\renewcommand*\namefont{\fontsize{24}{24}\selectfont}
+
+\begin{document}
+\makecvtitle
+
+\section{Experience}
+\subsection{Vocational}
+\cventry{2011--2014}{Co-Founder and Software Engineer}{Soundrop AS}{Oslo}{}
+{Development of desktop app in Qt/Qml, front-end single-page apps for Spotify
+in HTML/CSS/JavaScript, and backend systems in Erlang and Go.
+\newline{}
+Detailed achievements:
+\begin{itemize}
+\item Automatic software update system with compression and delta-updates in C++;
+\item C++ playback system capable of real-time gapless playback;
+\item Advanced web animations in a push-based real-time context;
+\item Real-time playback logic built on top of Spotify's playback APIs;
+\item Implemented OAuth and REST APIs in Erlang;
+\item Maintained and co-developed Soundrop's first iOS app;
+\item Re-engineered Android app from the ground up.
+\end{itemize}}
+\cventry{2011--2011}{Director of Engineering}{Tillit AS}{Oslo}{}
+{Reverse-engineering consultancy and part-time work on what later became Soundrop.}
+\cventry{2006--2011}{Software Engineer}{TANDBERG/Cisco}{Oslo}{}
+{Development of video conferencing software for Windows, Mac and Linux.
+Worked on everything from backend to video codecs, signaling protocols, and all
+the way up to the GUI layer.\newline{}
+Detailed achievements:
+\begin{itemize}
+\item Invented and implemented a DRM-scheme involving a modified PC BIOS;
+\item Inventor of patented ad hoc pairing method using ultrasound;
+\item Implemented video capture plugins for GStreamer on Windows and Mac;
+\item Became a developer on the GStreamer project;
+\item Ported software from embedded to desktop;
+\item Optimized OpenGL rendering on Windows and Mac;
+\item Co-developed tool for generating C++ and Python bindings from GObject/C APIs;
+\item Did a POC port to iPhone by reverse-engineering Apple's hardware codec APIs.
+\end{itemize}}
+\subsection{Miscellaneous}
+\cventry{2010--2015}{Founder and Maintainer}{www.frida.re}{}{}{Created the
+Frida project out of my passion for scriptable cross-platform dynamic binary
+instrumentation.}
+\cventry{2006--2009}{Founder and Maintainer}{https://code.google.com/p/ospy/}{}{}
+{Created the oSpy project to help me while reverse-engineering Microsoft
+ActiveSync and Windows Live Messenger.}
+\cventry{2004--2005}{Founder and Maintainer}{libmimic video codec}{}{}
+{Reverse-engineered Microsoft's proprietary video codec used by Windows Live Messenger
+for webcam conversations. Re-implemented it in C and released as libmimic, which hit
+Slahdot in 2005:\newline{}
+http://tech.slashdot.org/story/05/04/05/0240236/logitech-msn-webcam-codec-reverse-engineered}
+\cventry{2000--2002}{Founder and Maintainer}{JBLinux}{}{}
+{Created my own Linux distro from scratch. Maintained hundreds of packages.
+This distro was way ahead of its time, installing in just a few minutes and
+providing you with a streamlined configuration experience. Distributed on CD
+by two European Linux magazines.}
+
+\section{Languages}
+\cvitemwithcomment{Norwegian}{Mother tongue}{}
+\cvitemwithcomment{English}{Fluent}{}
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}
+
+\end{document}
